@@ -12,7 +12,7 @@ function wrap(line, maxLen){
     split = maxLen;
     offset = 0;
   }
-  return line.substring(0, split) + '\n' + wrap(line.substring(split + offset), maxLen)
+  return line.substring(0, split) + '\n' + wrap(line.substring(split + offset), maxLen);
 }
 
 module.exports = wrap;
